@@ -27,7 +27,7 @@ fn main() {
                 continue;
             }
         };
-
+        stale_input = true;
         println!("You guessed: {guess}");
 
         match guess.cmp(&secret_number) {
@@ -38,6 +38,5 @@ fn main() {
                 break;
             }
         }
-        stale_input = true;
     }
 }
